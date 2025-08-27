@@ -1,10 +1,10 @@
 const emailValue = document.querySelector(".input");
-const btn = document.querySelector(".btn");
 const success = document.querySelector(".success");
 const emailSucces = document.querySelector(".email-success");
 const container = document.querySelector(".container");
 const btnSuccess = document.querySelector(".btn-success");
-const form = document.querySelector(".form")
+const form = document.querySelector(".form");
+// @ts-ignore
 const validate = new JustValidate(".form");
 
 validate.addField(".input", [

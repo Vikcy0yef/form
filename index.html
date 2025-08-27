@@ -15,16 +15,16 @@
 <body>
 <section class="form-content">
   <div class="container">
-  <picture class="desktop" >
-    <source media="(min-width: 72.4em)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+  <picture  class="wrap">
+    <source  media="(min-width: 72.4em)" srcset="./assets/images/illustration-sign-up-desktop.svg">
     <img  class="desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration sign up" >
-  </picture>
-  <picture class="tablet">
-    <source media="(max-width: 72.3em)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+ 
+  
+    <source  media="(max-width: 72.3em)" srcset="./assets/images/illustration-sign-up-tablet.svg">
     <img class="tablet" src="./assets/images/illustration-sign-up-tablet.svg" alt="illustration sign up">
-  </picture>
-  <picture class="mobile">
-    <source media="(max-width: 47.9em)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+  
+
+    <source   media="(max-width: 47.9em)" srcset="./assets/images/illustration-sign-up-mobile.svg">
     <img class="mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration sign up">
   </picture>
   <div class="content">
@@ -33,30 +33,30 @@
 <ul class="list">
   <li class="list-item"> 
 <img src="./assets/images/icon-list.svg" alt="check mark">
-<p class="item-desc">Product discovery and building what matters</p>
+Product discovery and building what matters
   </li>
   <li class="list-item">
     <img src="./assets/images/icon-list.svg" alt="check mark">
-    <p class="item-desc">Measuring to ensure updates are a success</p>
+    Measuring to ensure updates are a success
   </li>
   <li class="list-item">
     <img src="./assets/images/icon-list.svg" alt="check mark">
-    <p class="item-desc">And much more!</p>
+    And much more!
   </li>
 </ul>
 
-<form action=""  class="form">
+<form action=""  class="form" novalidate="novalidate">
   <div class="label-wrap">
   <label class="label"   for="email">Email address</label>
   </div>
-  <input class="input" id="email" type="email" name="email" placeholder="email@company.com" >
+  <input class="input" id="email"   name="email" placeholder="email@company.com" >
  
-  <button  class="btn">Subscribe to monthly newsletter</button>
+  <button type="submit"  class="btn">Subscribe to monthly newsletter</button>
 </form>
 </div>
 </div>
 
-<div class="success">
+<section class="success" aria-live="polite" tabindex="-1">
   <div class="wrap">
 <div class="contend">
 <img class="img-icon" src="./assets/images/icon-list.svg" alt="check mark" width="64" height="64">
@@ -69,7 +69,7 @@ Please open it and click the button inside to confirm your subscription.
 <button class="btn-success">Dismiss message</button>
 </div>
 </div>
-</div>
+</section>
 </section>
 <script src="https://unpkg.com/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
 <script defer src="./index.js"></script>
