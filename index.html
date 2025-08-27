@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+  <title>Newsletter sign-up form with success message</title>
+  
+</head>
+<body>
+<section class="form-content">
+  <div class="container">
+  <picture class="desktop" >
+    <source media="(min-width: 72.4em)" srcset="./assets/images/illustration-sign-up-desktop.svg">
+    <img  class="desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration sign up" >
+  </picture>
+  <picture class="tablet">
+    <source media="(max-width: 72.3em)" srcset="./assets/images/illustration-sign-up-tablet.svg">
+    <img class="tablet" src="./assets/images/illustration-sign-up-tablet.svg" alt="illustration sign up">
+  </picture>
+  <picture class="mobile">
+    <source media="(max-width: 47.9em)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+    <img class="mobile" src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration sign up">
+  </picture>
+  <div class="content">
+<h1 class="title">Stay updated!</h1>
+<p class="desc">Join 60,000+ product managers receiving monthly updates on:</p>
+<ul class="list">
+  <li class="list-item"> 
+<img src="./assets/images/icon-list.svg" alt="check mark">
+<p class="item-desc">Product discovery and building what matters</p>
+  </li>
+  <li class="list-item">
+    <img src="./assets/images/icon-list.svg" alt="check mark">
+    <p class="item-desc">Measuring to ensure updates are a success</p>
+  </li>
+  <li class="list-item">
+    <img src="./assets/images/icon-list.svg" alt="check mark">
+    <p class="item-desc">And much more!</p>
+  </li>
+</ul>
+
+<form action=""  class="form">
+  <div class="label-wrap">
+  <label class="label"   for="email">Email address</label>
+  </div>
+  <input class="input" id="email" type="email" name="email" placeholder="email@company.com" >
+ 
+  <button  class="btn">Subscribe to monthly newsletter</button>
+</form>
+</div>
+</div>
+
+<div class="success">
+  <div class="wrap">
+<div class="contend">
+<img class="img-icon" src="./assets/images/icon-list.svg" alt="check mark" width="64" height="64">
+<h2 class="title-success" tabindex="-1">Thanks for subscribing!</h2>
+<p class="desc-success">A confirmation email has been sent to <span class="email-success">ash@loremcompany.com</span>.
+Please open it and click the button inside to confirm your subscription.
+</p>
+</div>
+<div>
+<button class="btn-success">Dismiss message</button>
+</div>
+</div>
+</div>
+</section>
+<script src="https://unpkg.com/just-validate@4.2.0/dist/just-validate.production.min.js"></script>
+<script defer src="./index.js"></script>
+</body>
+</html>
